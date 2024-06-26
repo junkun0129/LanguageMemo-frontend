@@ -1,5 +1,5 @@
 export const getRequest = async (endpoint: string) => {
-  const url = "http://localhost:3000" + endpoint;
+  const url = "https://languagememo-backend.onrender.com" + endpoint;
   return new Promise((resolve, reject) => {
     fetch(url)
       .then((res) => {
@@ -18,7 +18,7 @@ export const getRequest = async (endpoint: string) => {
 };
 
 export const postRequest = async (endpoint: string, body: Object) => {
-  const url = "http://localhost:3000" + endpoint;
+  const url = "https://languagememo-backend.onrender.com" + endpoint;
   fetch(url, {
     method: "post",
     headers: { "Content-Type": "application/json" },
